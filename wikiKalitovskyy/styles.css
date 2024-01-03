@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&family=Montserrat:wght@100&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:"Fira Sans", sans-serif;
+}
+body{
+    background-color: lightgrey;
+    padding: 20px 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px;
+    background-color: #3949ab;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #283593;
+}
+
+
+
+    .search-box {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    input[type="search"] {
+        margin-bottom: 10px;
+    }
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+h1{
+    color: slateblue;
+    font-size: 42px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 16px;
+}
+header p{
+    color:#616161;
+}
+
+    .search-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+        width: 100%;
+        overflow: hidden;
+        max-width: 720px;
+        margin-bottom: 16px;
+        padding: 16px;
+        transition: all 0.3s ease;
+
+    }
+
+.search-box input{
+display: block;
+    appearance: none;
+    -webkit-appearance: none;
+    outline:none;
+    border: none;
+    padding: 16px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+.search-box:focus-within{
+    box-shadow: 0px 7px 29px 0px rgba(100, 100,111, 0.2);
+    transform: translateY(-6px);
+}
+
+    .results {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+
+    .result {
+        width: 100%;
+        padding: 16px;
+        margin: 16px 0;
+        border-radius: 14px;
+        background-color: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+
+ .result:hover{
+     box-shadow: 0px 7px 29px 0px rgba(100, 100,111, 0.2);
+ }
+ .result h3{
+     color: #616161;
+     font-size: 28px;
+     margin-bottom: 16px;
+ }
+ .result p{
+     color: #313131;
+     font-size: 18px;
+     margin-bottom: 16px;
+ }
+ .result a{
+     display: inline-block;
+     padding: 12px;
+     width: 100%;
+     background-color: cornflowerblue;
+     color:#fff;
+     text-decoration: none;
+     text-align: center;
+     font-weight: 700;
+     border-radius: 13px;
+     transition: all 0.3s ease;
+
+ }
+ .result a:hover{
+     background-color: #3949ab;
+ }
+/* Додайте новий медіа-запит для адаптивності на маленьких екранах */
+@media only screen and (max-width: 600px) {
+    header {
+        text-align: center;
+    }
+
+    .search-box {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    input[type="search"] {
+        margin-bottom: 10px;
+    }
+
+    .search-box button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+/* Додайте стилі для кнопки */
+button {
+    padding: 10px;
+    background-color: #3949ab;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #283593;
+}
